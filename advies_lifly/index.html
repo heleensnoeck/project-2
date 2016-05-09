@@ -3,76 +3,40 @@
 <head lang="en">
     <meta charset="utf-8"> <!-- als er een spatie tussen de utf 8 staat dan moeten er quots om heen -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/svg/svg_style.css">
-
-    <link rel="stylesheet" type="text/css" href="css/colors/colors.css">
-    <link rel="stylesheet" type="text/css" href="css/nav/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/buttons/play-btn.css">
-    <link rel="stylesheet" type="text/css" href="css/buttons/play-btn.css">
     <link rel="stylesheet" type="text/css" href="css/assets/animate.css">
 
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+ -->
     <title>lifely</title>
 </head>
 
 
 <body>
     <main>
-        <nav>
-            <div class="container_menu">
-                <div class="side-nav">
-                    <div class="menu-icon">         
-                        <div class="line_one"></div>
-                        <div class="line_two"></div>
-                        <div class="line_three"></div>              
-                    </div>
-                    <div class="nav-content">
-                        <h1>Articles</h1>
-                        <ol>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#two-weeks">The first two weeks</a></li>
-                            <li><a href="#programs">I learned some programs</a></li>
-                            <li><a href="#time">No time for me</a></li>
-                            <li><a href="#talks">Tam Tam talks</a></li>
-                            <li><a href="#email-greg">Exciting email</a></li>
-                            <li><a href="#oxxio">Team Oxxio</a></li>
-                            <li><a href="#somthing-new">Somthing-new</a></li>
-                            <li><a href="#concept">Concept day!</a></li>
-                        </ol>
-                        <h1>Talks</h1>
-                        <ol>
-                            <li><a href="#merel">talk i had (merel)</a></li>
-                            <li><a href="#arthur">talk i had (Arthur)</a></li>
-                            <li><a href="#daphne">talk i had (Daphne)</a></li>
-                            <li><a href="#anne">talk i had (Anne)</a></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <section class="header">  
+        <section class="header block">  
             <div class="intro">
                 <h1>Advies raport lifely</h1>
-                <p>preformance matters, 5 new improvements</p>
-                <p>Scroll down to discover different ways to do it</p>
+                <p><strong>preformance matters, 5 new improvements<br/>
+                Scroll down to discover different ways to do it</strong></p>
+            </div>
+
+            <div class="scroll-down">
+               <span class="dot"></span>
             </div>
         </section>
 
-        <section id="two-weeks" class="block bg-purple post">
-            <section class="post">
+
+        <article class="block">
             <h1>1. Folder structure</h1>
             
-            <article>
-              <p class="dark">It may seem like this is not an importend part of performance, but it is. If you dont have the right folder structure you dont see were things are going and you will, write to mutch css or repeat yourself.</br>
-              </p>
+            <p>It may seem like this is not an importend part of performance, but it is. If you dont have the right folder structure you dont see were things are going and you will, write to much css or repeat yourself.<br />
+            <br />
+            <strong>How do you set up the right folder structure?</strong><br />
+            <br />
+            <strong>Pssst..</strong> you cann open the folders to see more structure
+            </p>
 
-              <p class="dark">How do you set up the right folder structure</p>
-
-              <p class="dark">Pssst you cann open the folders to see more structure</p> 
-            </article>
             <section class="folders">
                 <article class="folders-left">
                     <form>
@@ -82,21 +46,31 @@
                         <label class="open" for="n-1">src</label>
                       
                           <section class="right">
+
                               <div>
                                 <input id="n-2" type="checkbox">
                                 <label for="n-2">scripts</label>
                                 <div class="sub">
-                                  <a href="#link">Plague Rats</span>
-                                  <a href="#link">Sengir Vampire</a>
+                                  <input id="n-2-0" type="checkbox">
+                                  <label for="n-2-0">config</label>
+                                  <input id="n-2-0" type="checkbox">
+                                  <label for="n-2-0">controlers</label>
+                                  <a href="#link">app.js</a>
                                 </div>
-                              </div>
-                              
+                              </div> 
+
                               <div>
                                 <input id="n-3" type="checkbox">
                                 <label for="n-3">statics</label>
                                 <div class="sub">
-                                  <a href="#link">Mana Leak</a>
-                                  <a href="#link">Time Warp</a>
+                                  <input id="n-3-0" type="checkbox">
+                                  <label for="n-3-0">api</label>
+                                  <input id="n-3-0" type="checkbox">
+                                  <label for="n-3-0">favicons</label>
+                                  <input id="n-3-0" type="checkbox">
+                                  <label for="n-3-0">fonts</label>
+                                  <a href="#link">browserconfig.xml</a>
+                                  <a href="#link">index.html</a>
                                 </div>
                               </div>
                               
@@ -104,78 +78,46 @@
                                 <input id="n-4" type="checkbox">
                                 <label for="n-4">styles</label>
                                 <div class="sub">
-                                  <a href="#link">Giant Growth</a>
-                                  <a href="#link">Liege of the Tangle</a>
+                                  <input id="n-4-0" type="checkbox">
+                                  <label for="n-4-0">components</label>
+                                  <input id="n-4-0" type="checkbox">
+                                  <label for="n-4-0">dependencies</label>
+                                  <input id="n-4-0" type="checkbox">
+                                  <label for="n-4-0">directives</label>
+                                  <input id="n-4-0" type="checkbox">
+                                  <label for="n-4-0">fonts</label>
+                                  <input id="n-4-0" type="checkbox">
+                                  <label for="n-4-0">mixins</label>
                                 </div>
                               </div>
                               
+                            <!-- gebruiken twee keer een font folder -->
+
                               <div>
                                 <input id="n-5" type="checkbox">
                                 <label for="n-5">vendor</label>
                                 <div class="sub">
-                                  <a href="#link">Mogg Fanatic</a>
-                                  <a href="#link">Worldfire</a>
+                                  <input id="n-5-0" type="checkbox">
+                                  <label for="n-5-0">angular</label>
                                 </div>
                               </div>
                               
+                              <!-- vendor staat onder js bij tamtam -->
+
                               <div>
                                 <input id="n-6" type="checkbox">
-                                <label for="n-6">sass</label>
+                                <label for="n-6">tests</label>
                                 <div class="sub">
                                   <div>
                                     <input id="n-6-0" type="checkbox">
-                                    <label for="n-6-0">base</label>
-                                    <div class="sub">
-                                        <a href="#link">_functions.scss</a>
-                                        <a href="#link">_general.scss</a>
-                                        <a href="#link">_grid.scss</a>
-                                        <a href="#link">_mixins.scss</a>
-                                        <a href="#link">_nomalize.scss</a>
-                                        <a href="#link">_typography.scss</a>
-                                        <a href="#link">_general.scss</a>
-                                        <a href="#link">_vars.scss</a>
-                                    </div> <!-- sluit sub2e -->
+                                    <label for="n-6-0">scripts</label>
                                   </div> <!-- sluit div onde sub af -->
-                                </div> <!-- sluit sub1e -->
-                              </div> <!-- container div -->
+                                </div> 
 
-                              <div>
-                                <input id="n-7" type="checkbox">
-                                <label for="n-7">components</label>
-                                <div class="sub">
-                                  <div>
-                                    <input id="n-7-0" type="checkbox">
-                                    <label for="n-7-0">form-components</label>
-                                    <div class="sub">
-                                      <a href="#link">_buttons.scss</a>
-                                      <a href="#link">_form.scss</a>
-                                      <a href="#link">_lists.scss</a>
-                                      <a href="#link">_loaders.scss</a>
-                                    </div> <!-- sluit sub2e -->
-                                    <div>
-                                      <input id="n-8" type="checkbox">
-                                      <label for="n-8">modules</label>
-                                      <div class="sub">
-                                        <a href="#link">_buttons.scss</a>
-                                        <a href="#link">_form.scss</a>
-                                        <a href="#link">_lists.scss</a>
-                                        <a href="#link">_loaders.scss</a>
-                                      </div>
-                                    </div>
-                                    <div>
-                                      <input id="n-9" type="checkbox">
-                                      <label for="n-9">vendor</label>
-                                      <div class="sub">
-                                        <a href="#link">_animations.scss</a>
-                                      </div>
-                                    </div>
-                                  </div> <!-- sluit div onde sub af -->
-                                </div> <!-- sluit sub1e -->
-                              </div> <!-- container div -->
-                            </section> <!-- sluit section right -->
-                        </div> <!-- sluit tree div af -->
-                    </form>
-                </article>
+                      </section> <!-- sluit section right -->
+                    </div> <!-- sluit tree div af -->
+                  </form>
+            </article>
                 
                 <article class="folders-right">
                     <form>
@@ -188,28 +130,16 @@
                               <div>
                                 <input id="n-11" type="checkbox">
                                 <label for="n-11">fonts</label>
-                                <div class="sub">
-                                  <a href="#link">Plague Rats</span>
-                                  <a href="#link">Sengir Vampire</a>
-                                </div>
                               </div>
                               
                               <div>
                                 <input id="n-12" type="checkbox">
                                 <label for="n-12">html</label>
-                                <div class="sub">
-                                  <a href="#link">Mana Leak</a>
-                                  <a href="#link">Time Warp</a>
-                                </div>
                               </div>
                               
                               <div>
                                 <input id="n-13" type="checkbox">
                                 <label for="n-13">images</label>
-                                <div class="sub">
-                                  <a href="#link">Giant Growth</a>
-                                  <a href="#link">Liege of the Tangle</a>
-                                </div>
                               </div>
                               
                               <div>
@@ -285,130 +215,215 @@
                         </div> <!-- sluit tree div af -->
                     </form>
                 </article>
-                <section class="important">
-                  <p class="dark">why it is importent!</p>
+
+                <section class="clear">
+                  <p><strong>What is going wrong?</strong><br/>
+                     Well it is save to say that the right has much more structure then the left folders. When you take a look inside the folders you will nothist that Bundlin has a lot of components. And no base like the folder on the right. If you write one base and then build some components (nav, footer, ect.) you have much more structure and you dont need a css file for everything. 
+
+                     Then make sure you place all the Javascript stuff in the JS folder. Vendor = Javascript. 
+                     This also counts for the fonts, now fonts are in styles and static.
+                  </p>
+                  <p><strong>Why it is importent!</strong></p>
                   <ul>
                     <li>It is easier for you and your team to find stuff</li>
                     <li>You are a lot faster if you have to make adjustments</li>
                     <li>You dont write css styles dubble</li>
                   </ul>
                 </section>   
-            </section> <!-- close folders section -->
+            </article> <!-- close folders section -->
 
-        <section id="two-weeks" class="block bg-dark-purple post">
-            <h1 class="pink-title pink-font">
+        <article class="block">
+            <h1>
                 What does google say about Bundlin?
             </h1>
-            <article>
+            <section class="ul-left">
               <ul>
-                <li class="pink pink-font">Javascript en css above the fold rendering not enabled</li>
-                <li class="pink pink-font">Make use of browser cashing</li>
-                <li class="pink pink-font">Make use of image optimalisation</li>
+                <li>Javascript en css above the fold rendering not enabled</li>
+                <li>Make use of browser cashing</li>
+                <li>Make use of image optimalisation</li>
               </ul> 
-            </article>
-            <article>
-              <h2 class="pink pink-font">Bron: <a class="pink pink-font" href="https://developers.google.com/speed/pagespeed/insights/">https://developers.google.com/speed/pagespeed/insights/</a></h2>
-            </article>
-        </section>
+            </section>
+            <section class="link">
+              <h2>Bron: <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">developers.google.com</a></h2>
+            </section>
+        </article>
       
-        <section id="two-weeks" class="block bg-dark-pink post">
+        <article class="block">
             <h1>Lets talk about css above the fold</h1>
             
-            <article>
-              <p class="dark">You guys load <strong>8404</strong> lines of css in. This is render blocking. Not al of the css is nessesery (for the first page). I would recomend to you guys to start using critical css. This is css above the fold. how to do this. A little start -> up</p>     
+            <section>
+              <p>You guys load <strong>8404</strong> lines of css in. This is render blocking. Not al of the css is nessesery (for the first page). I would recomend to you guys to start using critical css. This is css above the fold. How to do this. A little start -> up</p>     
 
-              <img src="img/bundlin.png" alt="bundlin">
+              <figure class="img">
+                  <figcaption>                  
+                    <h2>Critical</h2>
+                    <hr>
+                    <h2>Non critical</h2>
+                  </figcaption>
+                <img src="img/critical.png" alt="bundlin">
+              </figure>
 
-              <p class="dark">You need two files. For the first file we extract only the minimum set of css required to render the above the fold content, and then we inline it in the web page. For the second file, or the non-critical css, we asynchronously load it so as not to block the web page.</p>
+              <p>You need two files. For the first file we extract only the minimum set of css required to render the above the fold content, and then we inline it in the web page. For the second file, or the non-critical css, we asynchronously load it so as not to block the web page.</p>
 
-              <section class="code">
-                !doctype html <br>
-                head<br>
-                  style /* inlined critical CSS */ style<br>
-                  script loadCSS('non-critical.css'); script<br>
-                head<br>
-                body<br>
-                  ...body goes here<br>
-                body<br>
-                html<br>
+              <section class="code-wrapper">
+                <textarea>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  style /* inlined critical CSS */ style
+                  script loadCSS('non-critical.css'); script
+                </head>
+                <body>
+                  ...body goes here
+                </body>
+                </html> 
+                </textarea>
               </section>
 
-              <p class="dark">This may seem like a lot of work to do by hand. But there are tools, for more info see: https://www.smashingmagazine.com/2015/08/understanding-critical-css/ </p>
-          </article>
-        </section>
+              <p>This may seem like a lot of work to do by hand. But there are tools. For more info see:</p> 
+                
+              <section class="link">  
+                <h2>Bron: <a href="https://www.smashingmagazine.com/2015/08/understanding-critical-css/" target="_blank">smashingmagazine.com</a></h2>
+              </section>
+          </section>
+        </article>
         
-        <section id="two-weeks" class="block bg-dark-purple post">
-            <h1 class="pink-title pink-font">Make use of a server worker.</h1> 
-            <p>A service worker is handy for <strong>2</strong>things</p>
+        <article class="block">
+            <h1>Make use of a server worker.</h1> 
+            <p>A service worker is handy for <strong>2</strong> things</p>
 
-            <article class="code">
-              <ul class="pink-font">
-                <ol>1 offline applications</ol>
-                <ol>2 preformance</ol>
+            <section>
+              <ul class="ul-left">
+                <li>offline applications</li>
+                <li>preformance</li>
               </ul>
-            </article>
-        
+            </section>
+      
+            <p><strong>But witch files to load?</strong><br/>
+            You dont want to make mobile users upset with there monthly bill</p>  
 
-            <h3 class="pink-font code">But witch files to load?</h3>
-            <p>You dont want to make mobile users upset with there monthly bill</p>  
-
-            <section class="code">
-            <p>
-                this.addEventListener('install', function(event) { </br>
-                  event.waitUntil(</br>
-                    caches.open('bundlin-serviceworker').then(function(cache) {</br>
-                      return cache.addAll([</br>
-                        './index.html',</br>
-                        './css/app.css',</br>
-                        './css/vendor.css',</br>
-                        './js/app.js',</br>
-                        './js/vendor.js',</br>
-                        './images/*.jpg',</br>
-                        './images/*.png'</br>
-                      ]);</br>
-                    })</br>
-                  );</br>
+            <section class="code-wrapper-sw">
+              <textarea>
+                this.addEventListener('install', function(event) { 
+                  event.waitUntil(
+                    caches.open('bundlin-serviceworker').then(function(cache) {
+                      return cache.addAll([
+                        './index.html',
+                        './css/app.css',
+                        './css/vendor.css',
+                        './js/app.js',
+                        './js/vendor.js',
+                        './images/*.jpg',
+                        './images/*.png'
+                      ]);
+                    })
+                  );
                 });
-              </p>
-              </section>          
-            <p>as you can see in the code example above those files are the files to keep in mind</p> 
+              </textarea>
+            </section>          
+            <p>as you can see in the code example above those files are the files to keep in mind.  
+            <br/>
+            <br/>
+            Service workers are relative new, so if you have no idea how it works, check out this link:</p>  
+            <section class="link">  
+              <h2>Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank">developer.mozilla.org</a></h2>
+            </section>        
+        </article>
 
-            <p>Info<p>          
-        </section>
-
-        <section id="two-weeks" class="block bg-dark-pink post">
+        <article class="block">
           <h1>Image Optimalisation</h1>
 
-          <p class="dark"> I see that you guys have a lot of images in your site. It is importent that you optimise these. This you do with build scrips as you guys already know.. but i nothist lifley uses Grunt and not Gulp. Gulp is a lot faster dan Grunt [i], so i would recomend to use Gulp.
-          
-          Image optimalisation in Gulp would look like this.</p>
-          <section class="code">
-            var gulp = require('gulp'); <br>
-            var imagemin = require('gulp-imagemin'),<br>
+          <p> I see that you guys have a lot of images in your site. It is importent that you optimise these. This you do with build scrips as you guys already know.. but i nothist Lifley uses Grunt and not Gulp. Gulp is a lot faster dan Grunt</p>
+          <div class="options"> <a href="#" class="show_snippet"><strong class="i">i</strong></a></div>
+          <p class="top">, so i would recomend to use Gulp. Image optimalisation in Gulp would look like this.</p>          
 
-            gulp.task('image', function() {<br>
-                gulp.src('public/images/*')<br>
-                .pipe(imagemin({<br>
-                    progressive: true<br>
-                }))<br>
-                .pipe(gulp.dest('public/build/img'));<br>
-            });
-          </section>
+         <section class="snippet">
+             <header>
+               <a href="#" class="close">X</a>
+             </header>
+            
+            <section class="content">
+            <textarea class="textarea_text">
+Grunt vs gulp
+
+Similarities
+
+The way they config a task Grunt is configuration-based en gulp is stream based.
+The way they execute a task. Grunt runs the processes you want to run task after task. And gulp tries to run the process parallel (at the same time) witch is much faster.
+
+            </textarea>
+
+
+            <textarea class="textarea_gulp">
+Example Grunt Configuration
+
+module.exports = function(grunt) {
+require('time-grunt')(grunt);
+grunt.initConfig({
+  pkg: grunt.file.readJSON('package.json'),
+  concat_css: {
+    dist: {
+      src: ['src/*.css'],
+      dest: 'css/styles.css'
+    }
+  },
+  cssmin: {
+    target: {
+      files: [{
+        'css/styles.min.css': 
+        ['css/styles.css']
+      }]
+    }
+  }
+});
+grunt.loadNpmTasks('grunt-concat-css');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.registerTask('default', ['concat_css', 'cssmin']);
+}
+
+            </textarea>
+
+            <textarea class="textarea_gulp">
+Example Gulp Configuration
+
+module.exports = function(grunt) {
+var gulp = require('gulp');
+var concatenate = require('gulp-concat-css');
+var minify = require('gulp-cssmin');
+var duration = require('gulp-duration');
+
+gulp.task('default', function() {
+  gulp.src('src/*.css')
+  .pipe(concatenate('styles.min.css'))
+  .pipe(minify())
+  .pipe(duration('Execution Time: '))
+  .pipe(gulp.dest('css/'));
+});
+
+          </textarea>
         </section>
+      </section>
+      
+      <div class="overlay hide"></div>
 
+      <section class="code-wrapper">
+        <textarea>
+          var gulp = require('gulp');
+          var imagemin = require('gulp-imagemin'),
 
-
-
+          gulp.task('image', function() {
+              gulp.src('public/images/*')
+              .pipe(imagemin({
+                  progressive: true
+              }))
+              .pipe(gulp.dest('public/build/img'));
+          });
+          </textarea>
+      </section>
+    </article>
 </main>
+
     <script src="js/jquery.min.js"></script>
-    <script src="js/assets/viewportchecker.js"></script>
-    <script src="js/assets/viewportcheck.js"></script>
-    <script src="js/play.js"></script>
-    <script src="js/inview.js"></script>
-    <script src="js/button.js"></script>
-    <script src="js/kruis_button.js"></script>
-    <script src="js/post.js"></script>
-    <script src="js/naam.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
